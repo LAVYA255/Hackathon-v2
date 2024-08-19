@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contribute</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #main {
+            max-width: 400px;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        label {
+            margin-bottom: 10px;
+        }
+        input, select {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <header class="header" >
+        <a href="index.html"><img src="final logo.png" class="logo"></a>
+        
+         <a href="index.html"><h1 class="head">TEASER</h1></a>
+        <nav>
+          <h3 class="white">
+            <a href="#topic" onclick="window.location.href='topic.html'" >TOPIC</a>
+            
+            <ul type="none" style="color: black;">
+              <li><a href="/quiz.html">REV YOUR ENGINES</a></li>
+              <li><a href="/quiz2.html">TECH WIZ</a></li>
+              <li><a href="/quiz3.html">BRAND BR</a></li>
+            </ul>
+          </h3>
+          <h3 class="white">
+            <a href="/form.html" >Contribute</a>
+          <h3 class="white">
+            <a href="/about.html" >ABOUT US</a>
+            
+          </h3>
+        </nav>
+      </header>
+    <div id="main">
+        <h2>Submit Your Answers</h2>
+        <form id="quiz-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="0"><br><br>
+            <label for="topic">Topic:</label>
+            <select id="topic" name="topic">
+                <option value="REV YOUR ENGINES">REV YOUR ENGINES</option>
+                <option value="TECH WIZ">TECH WIZ</option>
+                <option value="BRAND BR">BRAND BR</option>
+            </select><br><br>
+            <label for="question">Question:</label>
+            <input type="text" id="question" name="question"><br><br>
+            <label for="answer">Answer:</label>
+            <input type="text" id="answer" name="answer"><br><br>
+            <button id="submit-btn" type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2024 Teaser. All rights reserved.</p>
+    </footer>
+</body>
+</html>

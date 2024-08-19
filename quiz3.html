@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRAND BR</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="adbg">
+    <header class="header" >
+        <a href="index.html"><img src="final logo.png" class="logo"></a>
+        
+         <a href="index.html"><h1 class="head">TEASER</h1></a>
+        <nav>
+          <h3 class="white">
+            <a href="#topic" onclick="window.location.href='topic.html'" >TOPIC</a>
+            
+            <ul type="none" style="color: black;">
+              <li><a href="/quiz.html">REV YOUR ENGINES</a></li>
+              <li><a href="/quiz2.html">TECH WIZ</a></li>
+              <li><a href="/quiz3.html">BRAND BR</a></li>
+            </ul>
+          </h3>
+          <h3 class="white">
+            <a href="/form.html" >Contribute</a>
+          <h3 class="white">
+            <a href="/about.html" >ABOUT US</a>
+            
+          </h3>
+        </nav>
+      </header>
+    
+    <div>
+        
+        </div>
+    <div>
+        <div class="question-score">
+            <div class="question-tag">
+                <div>
+                    <p class="question-text">Question</p>
+                    <progress id="progress-bar" value="0" max="10"></progress>
+                </div>
+                <p class="num-val">0/10</p>
+            </div>
+            <div class="score-tag">
+                <div class="score-text">Score</div>
+                <h1 class="score-val">0</h1>
+            </div>
+        </div>
+        <div class="question">
+            <h1 id="question-text">What is the answer to this Question?</h1>
+            <div>
+                <div class="option"  id="option1">
+                    <span class="inner-box">A</span>
+                    <span id="option-text1">Choice 1</span>
+                </div>
+                <div class="option" id="option2">
+                    <span class="inner-box">B</span>
+                    <span id="option-text2">Choice 2</span>
+                </div>
+                <div class="option" id="option3">
+                    <span class="inner-box">C</span>
+                    <span id="option-text3">Choice 3</span>
+                </div>
+                <div class="option" id="option4">
+                    <span class="inner-box">D</span>
+                    <span id="option-text4">Choice 4</span>
+                </div>
+            </div>
+        </div>
+        <script src="/quiz3.js"></script>
+
+        <div id="end-screen" class="hidden">
+            <h2>Your Score: <span id="final-score"></span></h2>
+            <button id="play-again">Play Again</button>
+            <button id="go-home">Go Home</button>
+        </div>
+    </div>
+    
+</body>
+
+</html>
